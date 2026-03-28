@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Caterina Grimaldi — Technical Program Leader in Deep Tech Hardware</title>
+<meta name="description" content="Technical Program Leader with a robotics engineering background. I lead R&D-to-production transitions in deep tech hardware: robotics, AI products, industrial automation.">
+<meta name="author" content="Caterina Grimaldi">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://caterinagrimaldi.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://caterinagrimaldi.github.io/">
+<meta property="og:title" content="Caterina Grimaldi — Technical Program Leader">
+<meta property="og:description" content="I lead R&D-to-production transitions in deep tech hardware. €1.3M budget managed, 18% cost reduction, 110K units/year impacted.">
+<meta property="og:image" content="https://caterinagrimaldi.github.io/foto-caterina.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Caterina Grimaldi — Technical Program Leader">
+<meta name="twitter:description" content="I lead R&D-to-production transitions in deep tech hardware. €1.3M budget managed, 18% cost reduction, 110K units/year impacted.">
+<meta name="twitter:image" content="https://caterinagrimaldi.github.io/foto-caterina.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230D0D0D'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' fill='%23CC0000' font-family='monospace' font-weight='700' font-size='13'>CG</text></svg>">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT1VTVH30H"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());gtag('config','G-HT1VTVH30H');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+
+<style>
+/* ── RESET & TOKENS ─────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#FAFAF8;--white:#FFFFFF;--ink:#0D0D0D;
+  --mid:#555;--muted:#999;--line:#E2E2E0;
+  --red:#CC0000;--red-dim:rgba(204,0,0,0.07);
+  --mono:'Space Mono',monospace;--sans:'DM Sans',sans-serif;
+  --max:1100px;--pad:64px;--ease:cubic-bezier(0.16,1,0.3,1);
+}
+html{scroll-behavior:smooth}
+body{
+  background-color:var(--bg);
+  background-image:radial-gradient(circle,#D0D0CE 1px,transparent 1px);
+  background-size:26px 26px;
+  color:var(--ink);font-family:var(--sans);line-height:1.6;
+  opacity:0;animation:pageIn .5s var(--ease) .1s forwards;
+}
+@keyframes pageIn{to{opacity:1}}
+
+/* ── ANIMATIONS ─────────────────────────── */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.fade-up:nth-child(2){transition-delay:.07s}
+.fade-up:nth-child(3){transition-delay:.14s}
+.fade-up:nth-child(4){transition-delay:.21s}
+
+/* ── UTILITY ────────────────────────────── */
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.red-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:middle}
+.wrap{max-width:var(--max);margin:0 auto;padding:72px var(--pad)}
+
+/* ── NAV ────────────────────────────────── */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(250,250,248,0.93);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);
+  transform:translateY(-100%);animation:navIn .6s var(--ease) .2s forwards;
+}
+@keyframes navIn{to{transform:translateY(0)}}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;
+  padding:0 var(--pad);height:56px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.nav-logo{
+  font-family:var(--mono);font-size:13px;font-weight:700;
+  letter-spacing:.05em;color:var(--ink);text-decoration:none;
+  display:flex;align-items:center;gap:10px;
+}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);text-decoration:none;
+  position:relative;padding-bottom:2px;
+}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--ink);transition:width .2s var(--ease)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{width:100%}
+.btn-cta{
+  font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--red);
+  border:1px solid var(--red);padding:7px 16px;border-radius:2px;
+  transition:background .2s,color .2s;background:none;cursor:pointer;
+}
+.btn-cta:hover{background:var(--red);color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:all .3s}
+.mobile-menu{
+  display:none;position:fixed;top:56px;left:0;width:100%;
+  background:rgba(250,250,248,0.98);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);
+  padding:20px var(--pad);flex-direction:column;gap:16px;z-index:99;
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);text-decoration:none}
+
+/* ── HERO ───────────────────────────────── */
+.hero-wrap{max-width:var(--max);margin:0 auto;padding:64px var(--pad) 48px}
+.hero-top{
+  display:flex;align-items:center;gap:18px;margin-bottom:28px;
+  opacity:0;transform:translateY(20px);animation:fadeUp .7s var(--ease) .35s forwards;
+}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.avatar-ring{
+  width:68px;height:68px;border-radius:50%;
+  border:2px solid var(--line);overflow:hidden;flex-shrink:0;background:var(--white);
+  transition:border-color .3s;
+}
+.avatar-ring:hover{border-color:var(--red)}
+.avatar-ring img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-name{font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:.04em;color:var(--ink)}
+.hero-loc{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.badge-avail{
+  display:inline-flex;align-items:center;gap:6px;margin-left:10px;
+  border:1px solid var(--line);padding:4px 9px;border-radius:2px;
+  font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:.07em;vertical-align:middle;
+}
+.badge-avail .pulse{width:6px;height:6px;border-radius:50%;background:var(--red);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.hero-headline{opacity:0;transform:translateY(20px);animation:fadeUp .7s var(--ease) .5s forwards}
+h1{
+  font-family:var(--sans);font-size:clamp(46px,5.5vw,72px);
+  font-weight:700;line-height:.98;letter-spacing:-.045em;
+  margin-bottom:20px;max-width:640px;
+}
+h1 em{font-style:italic;font-weight:300;color:var(--muted)}
+.hero-sub{font-size:16px;line-height:1.72;color:var(--mid);max-width:520px;margin-bottom:32px}
+.hero-sub strong{color:var(--ink);font-weight:500}
+.hero-actions{opacity:0;transform:translateY(20px);animation:fadeUp .7s var(--ease) .65s forwards}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn-primary{
+  font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:12px 26px;background:var(--ink);color:var(--bg);
+  border:none;border-radius:2px;cursor:pointer;
+  transition:background .2s,transform .15s;text-decoration:none;display:inline-block;
+}
+.btn-primary:hover{background:#333;transform:translateY(-1px)}
+.btn-ghost{
+  font-family:var(--mono);font-size:12px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;
+  padding:11px 22px;border:1px solid var(--line);color:var(--muted);
+  background:none;border-radius:2px;cursor:pointer;
+  transition:border-color .2s,color .2s,transform .15s;
+}
+.btn-ghost:hover{border-color:var(--ink);color:var(--ink);transform:translateY(-1px)}
+
+/* ── METRICS ────────────────────────────── */
+.metrics-bar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white)}
+.metrics-inner{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:repeat(4,1fr)}
+.metric-item{padding:22px 24px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+.metric-item:first-child{padding-left:0}
+.metric-item:last-child{border-right:none}
+.metric-num{font-family:var(--mono);font-size:32px;font-weight:700;letter-spacing:-.04em;color:var(--ink);display:flex;align-items:baseline;gap:1px}
+.metric-num sup{font-size:12px;color:var(--red);font-weight:700}
+.metric-label{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* ── CASE STUDIES ───────────────────────── */
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:32px}
+h2{font-family:var(--sans);font-size:28px;font-weight:700;letter-spacing:-.03em;color:var(--ink)}
+.sec-count{font-family:var(--mono);font-size:10px;color:var(--line);letter-spacing:.1em}
+.case-list{display:flex;flex-direction:column;gap:2px}
+.case-item{
+  background:var(--white);border:1px solid var(--line);border-radius:3px;
+  display:grid;grid-template-columns:44px 1fr 148px;
+  align-items:stretch;transition:border-color .22s,box-shadow .22s;
+}
+.case-item:hover{border-color:#aaa;box-shadow:0 4px 20px rgba(0,0,0,.05)}
+.case-num{
+  display:flex;align-items:center;justify-content:center;border-right:1px solid var(--line);
+  font-family:var(--mono);font-size:10px;color:var(--line);letter-spacing:.1em;writing-mode:vertical-rl;
+}
+.case-body{padding:22px 26px}
+.case-co{
+  font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--red);margin-bottom:6px;display:flex;align-items:center;gap:8px;
+}
+.case-co::after{content:'';width:20px;height:1px;background:var(--red);display:block}
+.case-title{font-size:17px;font-weight:600;color:var(--ink);letter-spacing:-.02em;margin-bottom:8px}
+.case-desc{font-size:13px;color:var(--mid);line-height:1.62;max-width:500px}
+.case-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:12px}
+.case-tag{
+  font-family:var(--mono);font-size:9px;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 7px;border:1px solid var(--line);color:var(--muted);border-radius:1px;
+}
+/* Side column */
+.case-meta{display:flex;flex-direction:column;justify-content:center;padding:22px 18px;border-left:1px solid var(--line);gap:14px}
+.meta-block{}
+.meta-role{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.meta-val-lg{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--ink);line-height:1.2}
+.meta-val-sm{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--mid);line-height:1.3;margin-top:2px}
+.meta-sub{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:2px}
+.meta-divider{width:100%;height:1px;background:var(--line)}
+
+/* ── AI SECTION ─────────────────────────── */
+.ai-section{background:var(--ink)}
+.ai-inner{max-width:var(--max);margin:0 auto;padding:56px var(--pad)}
+.ai-label{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#444;margin-bottom:14px}
+.ai-heading{font-family:var(--sans);font-size:clamp(24px,3vw,36px);font-weight:700;letter-spacing:-.04em;line-height:1.1;color:#F0F0EE;margin-bottom:20px}
+.ai-heading span{color:var(--red)}
+.ai-intro{font-size:14px;color:#666;max-width:540px;line-height:1.7;margin-bottom:28px}
+.ai-facts{display:flex;gap:10px;flex-wrap:wrap}
+.ai-fact{
+  font-family:var(--mono);font-size:11px;letter-spacing:.07em;
+  border:1px solid #222;padding:8px 14px;border-radius:2px;color:#888;
+  display:flex;align-items:center;gap:7px;
+}
+.ai-fact .dot{width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0}
+
+/* ── SIDE PROJECTS ──────────────────────── */
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
+.project-card{
+  background:var(--white);border:1px solid var(--line);border-radius:3px;
+  padding:24px;display:flex;flex-direction:column;gap:10px;
+  transition:border-color .22s,box-shadow .22s;
+}
+.project-card:hover{border-color:#aaa;box-shadow:0 4px 20px rgba(0,0,0,.05)}
+.project-top{display:flex;justify-content:space-between;align-items:flex-start}
+.project-num{font-family:var(--mono);font-size:10px;color:var(--line);letter-spacing:.1em}
+.project-link{
+  font-family:var(--mono);font-size:10px;letter-spacing:.07em;color:var(--red);
+  text-decoration:none;border:1px solid var(--red-dim);padding:4px 8px;border-radius:1px;
+  transition:background .18s,color .18s;
+}
+.project-link:hover{background:var(--red);color:#fff}
+.project-ai-badge{
+  font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);border:1px solid var(--line);padding:3px 7px;border-radius:1px;width:fit-content;
+}
+.project-title{font-size:15px;font-weight:600;color:var(--ink);letter-spacing:-.02em}
+.project-desc{font-size:13px;color:var(--mid);line-height:1.58}
+
+/* ── ABOUT ──────────────────────────────── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.about-left p{font-size:14px;color:var(--mid);line-height:1.78;margin-bottom:12px}
+.about-left p:first-of-type{margin-top:18px}
+.skills-block{margin-bottom:24px}
+.skills-label{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:9px}
+.skills-pills{display:flex;flex-wrap:wrap;gap:5px}
+.skill-pill{
+  font-family:var(--mono);font-size:9px;letter-spacing:.05em;text-transform:uppercase;
+  padding:4px 8px;border:1px solid var(--line);color:var(--mid);border-radius:2px;
+  transition:border-color .18s,color .18s;cursor:default;
+}
+.skill-pill:hover{border-color:var(--ink);color:var(--ink)}
+.cert-list{list-style:none}
+.cert-list li{
+  padding:8px 0;border-bottom:1px solid var(--line);
+  font-family:var(--mono);font-size:10px;color:var(--mid);display:flex;justify-content:space-between;
+}
+.cert-list li:last-child{border-bottom:none}
+.cert-org{color:var(--muted)}
+
+/* ── FOOTER ─────────────────────────────── */
+footer{border-top:1px solid var(--line);background:var(--ink)}
+.footer-inner{
+  max-width:var(--max);margin:0 auto;padding:56px var(--pad);
+  display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;
+}
+.footer-label{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#444;margin-bottom:12px}
+.footer-heading{font-family:var(--sans);font-size:clamp(26px,3vw,38px);font-weight:700;letter-spacing:-.04em;line-height:1.1;color:#F0F0EE;margin-bottom:20px}
+.footer-heading span{color:var(--red)}
+.footer-right{display:flex;flex-direction:column;justify-content:flex-end;gap:18px;align-items:flex-end}
+.footer-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.footer-links a,.footer-links button{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:#555;text-decoration:none;border:1px solid #2A2A2A;
+  padding:9px 16px;border-radius:2px;background:none;cursor:pointer;
+  transition:border-color .18s,color .18s,transform .15s;
+}
+.footer-links a:hover,.footer-links button:hover{border-color:var(--red);color:var(--red);transform:translateY(-1px)}
+.footer-bottom{font-family:var(--mono);font-size:10px;color:#333;letter-spacing:.05em;text-align:right}
+
+/* ── EXIT INTENT POPUP ──────────────────── */
+.exit-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);
+  z-index:1000;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .3s;
+}
+.exit-overlay.show{opacity:1;pointer-events:all}
+.exit-popup{
+  background:var(--ink);border:1px solid #222;border-radius:4px;
+  padding:40px;max-width:400px;width:90%;
+  transform:translateY(16px);transition:transform .3s var(--ease);
+  position:relative;
+}
+.exit-overlay.show .exit-popup{transform:translateY(0)}
+.exit-popup-label{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#444;margin-bottom:14px}
+.exit-popup h3{font-family:var(--sans);font-size:22px;font-weight:700;color:#F0F0EE;letter-spacing:-.03em;margin-bottom:10px}
+.exit-popup p{font-size:13px;color:#666;line-height:1.65;margin-bottom:24px}
+.exit-popup-actions{display:flex;gap:10px}
+.exit-popup-close{
+  position:absolute;top:16px;right:16px;
+  font-family:var(--mono);font-size:11px;color:#444;
+  background:none;border:none;cursor:pointer;letter-spacing:.05em;
+  transition:color .15s;
+}
+.exit-popup-close:hover{color:#fff}
+
+/* ── RESPONSIVE ─────────────────────────── */
+@media (max-width:900px){
+  :root{--pad:32px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .case-item{grid-template-columns:40px 1fr}
+  .case-meta{display:none}
+  .projects-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .footer-inner{grid-template-columns:1fr;gap:40px}
+  .footer-right{align-items:flex-start}
+  .footer-bottom{text-align:left}
+  .ai-facts{flex-direction:column}
+  .metrics-inner{grid-template-columns:repeat(2,1fr)}
+  .metric-item:nth-child(2){border-right:none}
+  .metric-item:nth-child(3){border-top:1px solid var(--line)}
+  .metric-item:nth-child(4){border-top:1px solid var(--line);border-right:none}
+  .metric-item:nth-child(3){padding-left:0}
+}
+@media (max-width:600px){
+  :root{--pad:20px}
+  h1{font-size:40px}
+  .hero-top{flex-direction:column;align-items:flex-start;gap:12px}
+  .badge-avail{margin-left:0;margin-top:6px;display:flex}
+  .hero-name{display:flex;flex-direction:column;align-items:flex-start}
+  .metrics-inner{grid-template-columns:1fr 1fr}
+  .metric-item{padding:16px 12px}
+  .metric-num{font-size:26px}
+  .case-item{grid-template-columns:1fr}
+  .case-num{display:none}
+  .projects-grid{grid-template-columns:1fr}
+  .exit-popup{padding:28px}
+}
+</style>
+</head>
+<body>
+
+<!-- EXIT INTENT -->
+<div class="exit-overlay" id="exitOverlay">
+  <div class="exit-popup">
+    <button class="exit-popup-close" onclick="closeExit()">close ✕</button>
+    <div class="exit-popup-label">// before you go</div>
+    <h3>One message can start something.</h3>
+    <p>If you're working on a complex hardware program and need someone who can lead it from R&D to production, let's talk.</p>
+    <div class="exit-popup-actions">
+      <button class="btn-primary" onclick="window.location.href='mailto:c.grimaldi.work@gmail.com';closeExit()">Write me</button>
+      <button class="btn-ghost" onclick="closeExit()">Maybe later</button>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo"><span class="red-dot"></span>Caterina Grimaldi</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#ai">AI</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <button class="btn-cta" onclick="window.location.href='mailto:c.grimaldi.work@gmail.com'">Get in touch</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" onclick="toggleMenu()">Work</a>
+    <a href="#ai" onclick="toggleMenu()">AI</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero-wrap">
+  <div class="hero-top">
+    <div class="avatar-ring"><img src="foto-caterina.jpg" alt="Caterina Grimaldi"></div>
+    <div>
+      <div class="hero-name">Caterina Grimaldi
+        <span class="badge-avail"><span class="pulse"></span>Open to Senior TPM roles</span>
+      </div>
+      <div class="hero-loc">Italy · Robotics and Deep Tech Hardware</div>
+    </div>
+  </div>
+  <div class="hero-headline">
+    <h1>Hardware programs,<br><em>shipped.</em></h1>
+    <p class="hero-sub">
+      Technical Program Leader with a robotics engineering background.
+      I lead <strong>R&D to production transitions</strong> in deep tech hardware:
+      cross-functional teams, supplier strategy, technical trade-offs, real deadlines.
+    </p>
+  </div>
+  <div class="hero-actions">
+    <div class="btn-row">
+      <a href="#work" class="btn-primary">View Work</a>
+      <button class="btn-ghost" onclick="window.location.href='mailto:c.grimaldi.work@gmail.com'">Write me</button>
+    </div>
+  </div>
+</div>
+
+<!-- METRICS -->
+<div class="metrics-bar">
+  <div class="metrics-inner">
+    <div class="metric-item">
+      <div class="metric-num">€<span class="metric-count" data-target="1.3" data-dec="1">1.3</span><sup>M</sup></div>
+      <div class="metric-label">Budget managed</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num"><span class="metric-count" data-target="18" data-dec="0">18</span><sup>%</sup></div>
+      <div class="metric-label">Cost reduction</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num"><span class="metric-count" data-target="110" data-dec="0">110</span><sup>K</sup></div>
+      <div class="metric-label">Units/year impacted</div>
+    </div>
+    <div class="metric-item">
+      <div class="metric-num"><span class="metric-count" data-target="4.0" data-dec="1">4.0</span><sup>/4</sup></div>
+      <div class="metric-label">MSc GPA · Tor Vergata</div>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<section id="work">
+  <div class="wrap" style="padding-bottom:0">
+    <div class="sec-head fade-up">
+      <div><p class="tag" style="margin-bottom:8px">// selected work</p><h2>Case Studies</h2></div>
+      <span class="sec-count">03 projects</span>
+    </div>
+  </div>
+  <div style="max-width:var(--max);margin:0 auto;padding:0 var(--pad) 72px;display:flex;flex-direction:column;gap:2px">
+
+    <div class="case-item fade-up">
+      <div class="case-num">01</div>
+      <div class="case-body">
+        <div class="case-co">Robomagister · 2024 to present</div>
+        <div class="case-title">Liffo, AI Autonomous Cooking Robot</div>
+        <p class="case-desc">An AI-powered cooking robot needed to go from R&D to market with no existing production process. I owned the full program: cross-functional governance across hardware, software, electronics, and production with direct executive reporting. I built the supplier strategy from scratch, negotiated 10+ contracts, and hit the production deadline that made the market launch possible. Total budget delivered: €1.3M with 18% cost reduction.</p>
+        <div class="case-tags">
+          <span class="case-tag">NPI</span><span class="case-tag">Industrialization</span>
+          <span class="case-tag">AI Hardware</span><span class="case-tag">Supply Chain</span>
+          <span class="case-tag">Executive Reporting</span>
+        </div>
+      </div>
+      <div class="case-meta">
+        <div class="meta-block">
+          <div class="meta-role">Role</div>
+          <div class="meta-val-sm">Technical Project Manager</div>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-block">
+          <div class="meta-role">Budget</div>
+          <div class="meta-val-lg">€1.3M</div>
+        </div>
+        <div class="meta-block">
+          <div class="meta-role">Cost reduction</div>
+          <div class="meta-val-lg">−18%</div>
+          <div class="meta-sub">10+ suppliers</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-item fade-up">
+      <div class="case-num">02</div>
+      <div class="case-body">
+        <div class="case-co">Electrolux Group · 2022 to 2024</div>
+        <div class="case-title">System Verification and Supplier Quality Program</div>
+        <p class="case-desc">As Product Systems Engineer, I was the technical reference across architecture, R&D, manufacturing, digital, and quality teams. Quality issues existed but were invisible in the data. I built an automated analysis tool applying Lean Six Sigma that detected a 15% defect rate in power board components on a line producing 110K units per year. The finding triggered supplier corrective action before any defective units reached the market.</p>
+        <div class="case-tags">
+          <span class="case-tag">Lean Six Sigma</span><span class="case-tag">DFMEA</span>
+          <span class="case-tag">System Verification</span><span class="case-tag">Data Tooling</span>
+          <span class="case-tag">Root Cause Analysis</span>
+        </div>
+      </div>
+      <div class="case-meta">
+        <div class="meta-block">
+          <div class="meta-role">Role</div>
+          <div class="meta-val-sm">Product Systems Engineer</div>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-block">
+          <div class="meta-role">Defect reduction</div>
+          <div class="meta-val-lg">15%</div>
+        </div>
+        <div class="meta-block">
+          <div class="meta-role">Production line</div>
+          <div class="meta-val-lg">110K</div>
+          <div class="meta-sub">units per year</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-item fade-up">
+      <div class="case-num">03</div>
+      <div class="case-body">
+        <div class="case-co">IT+Robotics · 2021 to 2022</div>
+        <div class="case-title">EyeT+ LT and EyeT+ ZV, Industrial Vision Systems</div>
+        <p class="case-desc">Two new vision system products needed to be built with nothing but a rough concept. For EyeT+ LT, a fixed vision system, I owned the full R&D: problem definition, component selection, mechanical design, sensor integration, and calibration. For EyeT+ ZV, a robot-mounted system, I led the hardware design. Both went from undefined requirements to working products delivered to industrial clients.</p>
+        <div class="case-tags">
+          <span class="case-tag">R&D Ownership</span><span class="case-tag">HW Design</span>
+          <span class="case-tag">Computer Vision</span><span class="case-tag">Mechatronics</span>
+          <span class="case-tag">Sensor Integration</span>
+        </div>
+      </div>
+      <div class="case-meta">
+        <div class="meta-block">
+          <div class="meta-role">Role</div>
+          <div class="meta-val-sm">Mechatronics Engineer</div>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-block">
+          <div class="meta-role">Full R&D ownership</div>
+          <div class="meta-val-lg">EyeT+ LT</div>
+          <div class="meta-sub">Fixed vision system</div>
+        </div>
+        <div class="meta-block">
+          <div class="meta-role">HW design</div>
+          <div class="meta-val-sm">EyeT+ ZV</div>
+          <div class="meta-sub">Robot-mounted system</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AI SECTION -->
+<div id="ai" class="ai-section">
+  <div class="ai-inner fade-up">
+    <p class="ai-label">// ai and tools</p>
+    <div class="ai-heading">I build with AI,<br>not just <span>about</span> it.</div>
+    <p class="ai-intro">From leading an AI-powered robot to production, to building open-source PM tools with generative AI. Certified in Prompt Engineering. I use AI daily to move faster on the work that matters.</p>
+    <div class="ai-facts">
+      <div class="ai-fact"><span class="dot"></span>Led Liffo, an AI hardware product, from R&D to market</div>
+      <div class="ai-fact"><span class="dot"></span>Certified in Prompt Engineering for Generative AI</div>
+      <div class="ai-fact"><span class="dot"></span>4 open-source PM tools co-developed with AI</div>
+      <div class="ai-fact"><span class="dot"></span>AI-augmented workflows for risk, suppliers, stakeholders</div>
+    </div>
+  </div>
+</div>
+
+<!-- SIDE PROJECTS -->
+<section id="projects">
+  <div class="wrap" style="padding-bottom:0">
+    <div class="sec-head fade-up">
+      <div><p class="tag" style="margin-bottom:8px">// side projects, built with AI</p><h2>Open Source and Experiments</h2></div>
+      <span class="sec-count">04</span>
+    </div>
+  </div>
+  <div style="max-width:var(--max);margin:0 auto;padding:0 var(--pad) 72px">
+    <div class="projects-grid">
+      <div class="project-card fade-up">
+        <div class="project-top">
+          <span class="project-num">01</span>
+          <a href="https://kathegrima.github.io/hardware-pm-starter-kit/" target="_blank" class="project-link">Live &#8599;</a>
+        </div>
+        <span class="project-ai-badge">&#9889; AI-assisted</span>
+        <div class="project-title">Hardware PM Starter Kit</div>
+        <p class="project-desc">Templates, checklists, and NPI frameworks for Technical Project Managers entering hardware environments. Distilled from real program experience.</p>
+      </div>
+      <div class="project-card fade-up">
+        <div class="project-top">
+          <span class="project-num">02</span>
+          <a href="https://kathegrima.github.io/Project-Manager-Hardware-for-Dummies/" target="_blank" class="project-link">Live &#8599;</a>
+        </div>
+        <span class="project-ai-badge">&#9889; AI-assisted</span>
+        <div class="project-title">Hardware PM for Dummies</div>
+        <p class="project-desc">An open guide for software and product people crossing into hardware. Covers industrialization, DFMEA, supplier management, and the R&D to production gap.</p>
+      </div>
+      <div class="project-card fade-up">
+        <div class="project-top">
+          <span class="project-num">03</span>
+          <a href="https://kathegrima.github.io/MiniMind/index.html" target="_blank" class="project-link">Live &#8599;</a>
+        </div>
+        <span class="project-ai-badge">&#9889; AI-assisted</span>
+        <div class="project-title">MiniMind</div>
+        <p class="project-desc">A Duolingo-style web app to learn AI concepts, built entirely with AI. Short lessons, practical framing, no fluff.</p>
+      </div>
+      <div class="project-card fade-up">
+        <div class="project-top">
+          <span class="project-num">04</span>
+          <a href="http://kathegrima.github.io/timeline-realist" target="_blank" class="project-link">Live &#8599;</a>
+        </div>
+        <span class="project-ai-badge">&#9889; AI-assisted</span>
+        <div class="project-title">Timeline Realist</div>
+        <p class="project-desc">A tool that challenges optimistic project timelines using historical delay patterns. Built out of genuine frustration with unrealistic hardware schedules.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="border-top:1px solid var(--line);background:var(--white)">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-left fade-up">
+        <p class="tag">// about</p>
+        <h2 style="margin-top:14px">Built for complexity.<br>Wired to ship.</h2>
+        <p>Robotics Engineer (MSc, Tor Vergata, GPA 4.0/4.0) turned Technical Program Leader. Five years building and shipping hardware in robotics, AI products, and industrial automation.</p>
+        <p>I thrive in the phase most people find hardest: when the prototype works but nobody knows how to scale it. I can read a DFMEA, challenge a supplier spec, and present a make-or-buy decision to a board in the same week.</p>
+        <p style="color:var(--muted);font-size:13px">Outside work: 8 years as an AGESCI Scout Leader. Former VP of Roma2LUG, a Linux and open source community. Currently exploring ideas at the intersection of AI and workplace wellness.</p>
+      </div>
+      <div class="about-right fade-up">
+        <div class="skills-block">
+          <div class="skills-label">Program Management</div>
+          <div class="skills-pills">
+            <span class="skill-pill">NPI Leadership</span><span class="skill-pill">Industrialization</span>
+            <span class="skill-pill">Risk Management</span><span class="skill-pill">Supplier Strategy</span>
+            <span class="skill-pill">Budget Ownership</span><span class="skill-pill">Agile · Kanban</span>
+            <span class="skill-pill">DFMEA</span><span class="skill-pill">Make-or-Buy</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <div class="skills-label">Technical</div>
+          <div class="skills-pills">
+            <span class="skill-pill">Robotics</span><span class="skill-pill">AI Products</span>
+            <span class="skill-pill">HW/SW Integration</span><span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">SolidWorks</span><span class="skill-pill">MATLAB</span>
+          </div>
+        </div>
+        <div class="skills-block">
+          <div class="skills-label">Certifications</div>
+          <ul class="cert-list">
+            <li><span>Lean Six Sigma Green Belt</span><span class="cert-org">Certified</span></li>
+            <li><span>Project Lifecycle Management</span><span class="cert-org">PoliMi</span></li>
+            <li><span>Project Management Certificate</span><span class="cert-org">Google · IBM</span></li>
+            <li><span>Prompt Engineering for GenAI</span><span class="cert-org">LinkedIn</span></li>
+            <li><span>Industrial Engineering License</span><span class="cert-org">CNI · Italy</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left fade-up">
+      <div class="footer-label">// let's work together</div>
+      <div class="footer-heading">Big program.<br>Hard hardware.<br><span>Let's talk.</span></div>
+    </div>
+    <div class="footer-right fade-up">
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/caterina-grimaldi" target="_blank">LinkedIn</a>
+        <a href="https://github.com/kathegrima" target="_blank">GitHub</a>
+        <button onclick="window.location.href='mailto:c.grimaldi.work@gmail.com'">Write me</button>
+      </div>
+      <div class="footer-bottom">© 2026 Caterina Grimaldi</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Scroll fade-up
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)} });
+},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Counter animation
+function easeOut(t){return 1-Math.pow(1-t,4)}
+function counter(el,target,dec,dur){
+  const t0=performance.now();
+  (function tick(now){
+    const p=Math.min((now-t0)/dur,1),v=easeOut(p)*target;
+    el.textContent=dec?v.toFixed(dec):Math.round(v);
+    if(p<1)requestAnimationFrame(tick);
+  })(t0);
+}
+const metObs=new IntersectionObserver(entries=>{
+  if(entries[0].isIntersecting){
+    document.querySelectorAll('.metric-count').forEach(el=>{
+      counter(el,parseFloat(el.dataset.target),parseInt(el.dataset.dec),1400);
+    });
+    metObs.disconnect();
+  }
+},{threshold:0.5});
+const mb=document.querySelector('.metrics-bar');
+if(mb)metObs.observe(mb);
+
+// Hamburger
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// Exit intent
+let shown=false;
+document.addEventListener('mouseleave',e=>{
+  if(e.clientY<0&&!shown&&!sessionStorage.getItem('exitShown')){
+    document.getElementById('exitOverlay').classList.add('show');
+    shown=true;sessionStorage.setItem('exitShown','1');
+  }
+});
+function closeExit(){document.getElementById('exitOverlay').classList.remove('show')}
+document.getElementById('exitOverlay').addEventListener('click',function(e){
+  if(e.target===this)closeExit();
+});
+</script>
+</body>
+</html>
